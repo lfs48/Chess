@@ -2,17 +2,20 @@ require "board.rb"
 
 describe Board do
 
+    subject(:board) {Board.new}
+
     describe "#initialize" do
 
-        it "create an 8x8 array as an instance variable"
+        it "create an 8x8 array as an instance variable" do
+            expect(board.rows.length).to eq(8)
+            expect(board.rows[0].length).to eq(8)
+        end
 
         it "should store a reference to the NullPiece as an instance variable"
 
-        it "should call the populate helper method to populate the board"
+        it "should populate the board"
 
     end
-
-    subject(:board) {Board.new}
 
     describe "#[]" do
 
