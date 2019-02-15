@@ -2,8 +2,6 @@ require "byebug"
 
 module Slideable
 
-    # attr_reader :HORIZONTAL_DIRS, :DIAGONAL_DIRS
-
     def moves
 
         dir = move_dirs
@@ -27,11 +25,30 @@ module Slideable
 
     end
 
+    def hor_dirs
+        HORIZONTAL_DIRS
+    end
+
+    def diag_dirs
+        DIAGONAL_DIRS
+    end
+
 
     private
 
-    # HORIZONTAL_DIRS = :HORIZONTAL_DIRS
-    # DIAGONAL_DIRS = :DIAGONAL_DIRS
+    HORIZONTAL_DIRS = [
+        [1, nil],
+        [nil, 1],
+        [-1, nil],
+        [nil, -1]
+    ]
+
+    DIAGONAL_DIRS = [
+        [1, 1],
+        [-1, -1],
+        [1, -1],
+        [-1, 1]
+    ]
 
     def move_dirs
     end
