@@ -81,4 +81,16 @@ describe Board do
 
     end
 
+    describe "#pieces" do
+
+        it "should retun an array containing all the pieces on the board"
+
+    end
+
+    describe "#dup" do
+
+        it "should return a new Board object that is a copy of this board"
+
+    end
+
 end
