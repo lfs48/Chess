@@ -12,6 +12,8 @@ describe Slideable do
 
         it "should not include positions past the first enemy piece"
 
+        it "should only include positions within the bounds of the board"
+
         it "should work for a Rook"
 
         it "should work for a Bishop"
